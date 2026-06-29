@@ -3,192 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Guided Way Counseling - Compassionate therapy in Biddeford, Maine. Specializing in anxiety, depression, trauma, ADHD, and motherhood challenges.">
-    <title>Guided Way Counseling | Therapy in Biddeford, Maine</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Guided Way Counseling - Coming Soon. Compassionate therapy in Biddeford, Maine.">
+    <title>Coming Soon | Guided Way Counseling</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #5a7254;
+            --dark-green: #3d4d38;
+            --sage: #a8b5a0;
+            --cream: #f5f3ed;
+            --white: #ffffff;
+            --font-heading: 'Cormorant Garamond', serif;
+            --font-body: 'Montserrat', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: linear-gradient(135deg, var(--sage) 0%, var(--primary-green) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .construction-container {
+            max-width: 800px;
+            background-color: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 2rem;
+            border-radius: 50%;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--dark-green);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .tagline {
+            font-family: var(--font-heading);
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            color: var(--primary-green);
+            margin-bottom: 2rem;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        p {
+            color: #4a4a4a;
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            background-color: var(--cream);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .contact-info h2 {
+            font-family: var(--font-heading);
+            color: var(--primary-green);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .contact-item strong {
+            color: var(--dark-green);
+        }
+
+        .contact-item a {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--dark-green);
+            text-decoration: underline;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.125rem;
+            margin: 1rem 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: var(--dark-green);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(58, 77, 52, 0.3);
+        }
+
+        .button.secondary {
+            background-color: transparent;
+            color: var(--primary-green);
+            border: 2px solid var(--primary-green);
+        }
+
+        .button.secondary:hover {
+            background-color: var(--primary-green);
+            color: var(--white);
+        }
+
+        .specialties {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .specialty-tag {
+            background-color: var(--cream);
+            color: var(--dark-green);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            border: 2px solid var(--sage);
+        }
+
+        .dev-link {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--cream);
+        }
+
+        .dev-link a {
+            color: var(--sage);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .dev-link a:hover {
+            color: var(--primary-green);
+        }
+
+        @media (max-width: 768px) {
+            .construction-container {
+                padding: 2rem;
+            }
+
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .button {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="Resources/logo.png" alt="Guided Way Counseling Logo">
-                <span>Guided Way Counseling</span>
-            </a>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="contact.html#consultation" class="cta-button">Free Consultation</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="construction-container">
+        <img src="Resources/logo.png" alt="Guided Way Counseling Logo" class="logo">
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>A Safe Space to Be Heard</h1>
-            <p class="hero-subtitle">Make meaning of your story and find a way forward</p>
-            <p class="hero-description">Compassionate, personalized support to help you navigate life's challenges, heal, and find peace, clarity, and renewed purpose.</p>
-            <div class="hero-buttons">
-                <a href="contact.html#consultation" class="button primary">Schedule Free Consultation</a>
-                <a href="about.html" class="button secondary">Learn More</a>
-            </div>
-        </div>
-    </header>
+        <h1>Guided Way Counseling</h1>
+        <p class="tagline">A Safe Space to Be Heard</p>
 
-    <section class="intro">
-        <div class="container">
-            <div class="intro-content">
-                <h2>Evidence-Based Holistic Care with a Warm, Client-Centered Approach</h2>
-                <p>Life can feel overwhelming. Whether you're facing anxiety, depression, trauma, life transitions, or the unique challenges of motherhood, you don't have to navigate these struggles alone. At Guided Way Counseling, I provide a safe, non-judgmental space where you can explore your experiences, process your emotions, and discover your path to healing.</p>
-            </div>
-        </div>
-    </section>
+        <p>Our website is currently under construction, but we're here and ready to help you on your healing journey.</p>
 
-    <section class="specialties">
-        <div class="container">
-            <h2>Specialties</h2>
-            <div class="specialties-grid">
-                <div class="specialty-card">
-                    <div class="specialty-icon">🧠</div>
-                    <h3>Depression & Anxiety</h3>
-                    <p>Find relief from overwhelming emotions and develop coping strategies for lasting change.</p>
-                </div>
-                <div class="specialty-card">
-                    <div class="specialty-icon">🌿</div>
-                    <h3>ADHD</h3>
-                    <p>Understanding and managing ADHD with compassionate, practical support.</p>
-                </div>
-                <div class="specialty-card">
-                    <div class="specialty-icon">💚</div>
-                    <h3>Trauma & PTSD</h3>
-                    <p>Trauma-informed care to help you heal and reclaim your sense of safety.</p>
-                </div>
-                <div class="specialty-card">
-                    <div class="specialty-icon">🌅</div>
-                    <h3>Life Transitions</h3>
-                    <p>Navigate major life changes with clarity and resilience.</p>
-                </div>
-                <div class="specialty-card">
-                    <div class="specialty-icon">🤱</div>
-                    <h3>Motherhood & Postpartum</h3>
-                    <p>Support through pregnancy, postpartum, and the journey of motherhood.</p>
-                </div>
-                <div class="specialty-card">
-                    <div class="specialty-icon">🕊️</div>
-                    <h3>Church Hurt / Spiritual Abuse</h3>
-                    <p>Healing from religious trauma in a safe, understanding environment.</p>
-                </div>
-                <div class="specialty-card">
-                    <div class="specialty-icon">💔</div>
-                    <h3>Grief & Loss</h3>
-                    <p>Compassionate support as you process loss and find meaning.</p>
-                </div>
-                <div class="specialty-card">
-                    <div class="specialty-icon">✨</div>
-                    <h3>Highly Sensitive Persons</h3>
-                    <p>Embrace your sensitivity as a strength while developing healthy boundaries.</p>
-                </div>
-            </div>
-            <div class="center-button">
-                <a href="services.html" class="button primary">View All Services</a>
-            </div>
+        <div class="specialties">
+            <span class="specialty-tag">Depression & Anxiety</span>
+            <span class="specialty-tag">Trauma & PTSD</span>
+            <span class="specialty-tag">ADHD</span>
+            <span class="specialty-tag">Motherhood Support</span>
+            <span class="specialty-tag">Church Hurt</span>
+            <span class="specialty-tag">Life Transitions</span>
         </div>
-    </section>
 
-    <section class="approach">
-        <div class="container">
-            <div class="approach-content">
-                <div class="approach-text">
-                    <h2>My Approach</h2>
-                    <p>I use an integrated bio/psycho/social/spiritual approach, drawing from evidence-based modalities including:</p>
-                    <ul>
-                        <li>Person-Centered Therapy</li>
-                        <li>Cognitive Behavioral Therapy (CBT)</li>
-                        <li>Internal Family Systems (IFS)</li>
-                        <li>Trauma-Focused Therapy</li>
-                        <li>Mindfulness-Based Therapy</li>
-                        <li>Christian Counseling (optional)</li>
-                    </ul>
-                    <p>Every person's journey is unique. I meet you where you are with empathy, authenticity, and unconditional acceptance.</p>
-                </div>
-                <div class="approach-image">
-                    <img src="Resources/logo.png" alt="Guided Way Counseling">
-                </div>
+        <div class="contact-info">
+            <h2>Get in Touch Today</h2>
+            <div class="contact-item">
+                <strong>Casie Rizza, LCPC-C, MA</strong>
+            </div>
+            <div class="contact-item">
+                <strong>Email:</strong> <a href="mailto:casie@guidedwaycounseling.com">casie@guidedwaycounseling.com</a>
+            </div>
+            <div class="contact-item">
+                <strong>Phone:</strong> <a href="tel:2078869114">(207) 886-9114</a>
+            </div>
+            <div class="contact-item">
+                <strong>Location:</strong> Biddeford, ME 04005
+            </div>
+            <div class="contact-item" style="margin-top: 1.5rem;">
+                <strong>Tuesdays:</strong> Telehealth (9am-2pm)<br>
+                <strong>Wednesdays:</strong> In-Person in Biddeford (9am-2pm)
             </div>
         </div>
-    </section>
 
-    <section class="availability">
-        <div class="container">
-            <h2>Availability & Fees</h2>
-            <div class="availability-grid">
-                <div class="availability-card">
-                    <h3>Schedule</h3>
-                    <p><strong>Tuesdays:</strong> Telehealth (9am-2pm)</p>
-                    <p><strong>Wednesdays:</strong> In-Person in Biddeford (9am-2pm)</p>
-                    <p class="accepting">✓ Currently Accepting New Clients</p>
-                </div>
-                <div class="availability-card">
-                    <h3>Investment</h3>
-                    <p><strong>Initial Session:</strong> $110</p>
-                    <p><strong>Regular Sessions:</strong> $90</p>
-                    <p><strong>Sliding scale available upon application</strong></p>
-                    <p class="note">Free 15-minute consultation offered</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <p style="margin-top: 1.5rem;">
+            <strong>✓ Currently Accepting New Clients</strong><br>
+            Free 15-minute consultation available
+        </p>
 
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Take the Next Step?</h2>
-            <p>Let's connect and explore how therapy can support your journey.</p>
-            <a href="contact.html#consultation" class="button primary large">Schedule Your Free Consultation</a>
+        <div>
+            <a href="mailto:casie@guidedwaycounseling.com" class="button">Email Me</a>
+            <a href="tel:2078869114" class="button secondary">Call Now</a>
         </div>
-    </section>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-col">
-                <img src="Resources/logo.png" alt="Guided Way Counseling" class="footer-logo">
-                <p>Casie Rizza, LCPC-C, MA</p>
-            </div>
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <p>Email: <a href="mailto:casie@guidedwaycounseling.com">casie@guidedwaycounseling.com</a></p>
-                <p>Phone: <a href="tel:2078869114">(207) 886-9114</a></p>
-                <p>Biddeford, ME 04005</p>
-            </div>
-            <div class="footer-col">
-                <h4>Services</h4>
-                <p>Telehealth Throughout Maine</p>
-                <p>In-Person (Biddeford)</p>
-                <p><a href="https://www.psychologytoday.com/us/therapists/casie-rizza-biddeford-me/1425780" target="_blank" rel="noopener">Psychology Today Profile</a></p>
-            </div>
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Guided Way Counseling. All rights reserved. | Maine License: XL8623</p>
-        </div>
-    </footer>
+        <p style="margin-top: 2rem; font-size: 1rem;">
+            <a href="https://www.psychologytoday.com/us/therapists/casie-rizza-biddeford-me/1425780" target="_blank" rel="noopener" style="color: var(--primary-green); text-decoration: underline;">View My Psychology Today Profile</a>
+        </p>
 
-    <script src="js/script.js"></script>
+        <div class="dev-link">
+            <a href="home.html">Preview Development Site →</a>
+        </div>
+    </div>
 </body>
 </html>
